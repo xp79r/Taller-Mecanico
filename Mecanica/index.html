@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sttyle.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:ital,wght@0,400;1,100&display=swap"
+        rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>Taller Mecánico</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <header>
+            <section class="logo">
+                <a href="http://127.0.0.1:5501/index.html"> <img src="./imagenes/logo-mecanica.png"
+                        alt="Logo de la empresa"></a>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:5501/index.html">INICIO</a></li>
+                    <li><a href="http://www.google.com">NOSOTROS</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="#">NOTICIAS</a></li>
+                    <li><a href="#">CONTACTOS</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon" onclick="toggleMenu()">&#9776;</div>
+        </header>
+
+        <section class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./imagenes/slider01.jpg" alt="Imagen 1"></div>
+                <div class="swiper-slide"><img src="./imagenes/slider02.jpg" alt="Imagen 2"></div>
+                <div class="swiper-slide"><img src="./imagenes/slider03.jpg" alt="Imagen 3"></div>
+                <div class="swiper-slide"><img src="./imagenes/slider04.jpg" alt="Imagen 4"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </section>
+        <main>
+            <h1>Bienvenido a tu mecánico de Confianza</h1>
+            <section class="sectionPrincipal">
+                <article>
+                    <img src="./imagenes/servicio01.jpg" alt="">
+                    <h2>Servício #1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, magnam ratione odio, placeat quasi
+                        et
+                        error ipsa odit fugit, dolor voluptas dolores ipsum esse. Cupiditate modi quibusdam cum sint
+                        dolorum.
+                    </p>
+                    <button>Acceder</button>
+                </article>
+                <article>
+                    <img src="./imagenes/servicio02.jpg" alt="">
+                    <h2>Servício #2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, magnam ratione odio, placeat quasi
+                        et
+                        error ipsa odit fugit, dolor voluptas dolores ipsum esse. Cupiditate modi quibusdam cum sint
+                        dolorum.
+                    </p>
+                    <button>Acceder</button>
+                </article>
+                <article>
+                    <img src="./imagenes/servicio03.jpg" alt="">
+                    <h2>Servício #3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, magnam ratione odio, placeat quasi
+                        et
+                        error ipsa odit fugit, dolor voluptas dolores ipsum esse. Cupiditate modi quibusdam cum sint
+                        dolorum.
+                    </p>
+                    <button>Acceder</button>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <section class="footer1">
+                <img src="./imagenes/logo-blanco.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laboriosam culpa illum, commodi
+                    cupiditate
+                    in? Quis aliquam iusto dolore, illo omnis consectetur quibusdam repellat! Voluptatem numquam
+                    delectus
+                    laboriosam vitae quo!</p>
+            </section>
+            <section class="footer2">
+                <div class="redes">
+                    <h3>Síguenos por</h3>
+                    <div class="redesSociales">
+                        <img class="whatsapp" src="./imagenes/whatsapp.png" alt="">
+                        <img class="gmail" src="./imagenes/gmail.png" alt="">
+                        <img class="instagram" src="./imagenes/instagram.png" alt="">
+                        <img class="twitter" src="./imagenes/twitter.png" alt="">
+                    </div>
+                </div>
+                <div class="contactos">
+                    <h3>Contactanos</h3>
+                    <label class="dato">
+                        <img src="./imagenes/gps.png" alt="">
+                        <p> 25 de Mayo 2343</p>
+                    </label>
+                    <label class="dato">
+                        <img src="./imagenes/direccion.png" alt="">
+                        <p>tumecanicoamigo@gmail.com</p>
+                    </label>
+                    <label class="dato">
+                        <img src="./imagenes/fono.png" alt="">
+                        <p>Teléfono+56 544343444</p>
+                    </label>
+                </div>
+            </section>
+        </footer>
+        <script src="./js/mecanica.js"></script>
+    </div>
+</body>
+
+</html>

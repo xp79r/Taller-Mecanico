@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #e3e3e3;
+  padding: 10px 40px 30px 40px;
+}
+
+.conteiner {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 4px 8px 3px rgb(144, 143, 143);
+  min-width: 320px; /*cambio */
+}
+
+header {
+  display: flex;
+  background-color: rgb(34, 89, 178);
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  border-radius: 15px 15px 0 0;
+}
+
+header .logo {
+  padding: 10px;
+  cursor: pointer;
+}
+
+header .logo img {
+  width: 11rem;
+}
+
+header nav {
+  width: 70%;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /*add*/
+}
+
+header nav ul li {
+  border: 1px solid white;
+  color: white;
+}
+
+header nav ul a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background-color: rgba(117, 154, 199, 0.5);
+}
+
+header .nav-icon {
+  width: 0%;
+  color: white;
+  font-size: 2.3rem;
+  display: none;
+}
+
+.swiper-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.swiper-slide img {
+  width: 100%;
+  min-height: 170px; /* add */
+}
+
+main h1 {
+  text-align: center;
+  color: green;
+  margin: 20px 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.sectionPrincipal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* cambio*/
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 10px 10px;
+  width: 30%;
+  /* max-width: 500px; cambio */
+  min-width: 240px;
+}
+
+article img {
+  width: 100%;
+  /* min-width: 230px; */
+}
+
+article h2 {
+  background-color: rgb(27, 85, 139);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 2rem;
+}
+
+article p {
+  padding: 10px;
+}
+
+article button {
+  color: white;
+  background-color: rgb(35, 76, 165);
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 40%;
+  border-radius: 25px;
+  margin: 10px auto 15px auto;
+}
+
+footer {
+  background-color: rgb(22, 66, 153);
+  display: flex;
+  flex-direction: row;
+  padding: 40px 20px;
+  border-radius: 0 0 15px 15px;
+}
+
+.footer1,
+.footer2 {
+  width: 50%;
+  color: white;
+  padding: 0 20px;
+}
+/* add**/
+.footer1 img {
+  width: 50%;
+}
+
+.footer1 p {
+  padding: 10px;
+}
+
+.footer2 .redes {
+  width: 100%;
+}
+
+.footer2 .redes h3 {
+  margin: 0 auto;
+}
+
+.footer1 p {
+  padding: 10px;
+}
+
+.footer2 .redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer2 .redes .redesSociales {
+  margin-top: 10px;
+}
+
+.footer2 .redes .redesSociales img {
+  width: 30px;
+  cursor: pointer;
+  border: 0;
+  margin: 4px;
+}
+
+.footer2 .redes .redesSociales img:hover {
+  transform: scale3d(1.3, 1.3, 2);
+}
+
+.dato {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+}
+.dato p {
+  margin-left: 20px;
+}
+
+.whatsapp,
+.gmail,
+.instagram,
+.twitter {
+  cursor: pointer;
+}
+.whatsapp:hover,
+.gmail:hover {
+  transform: rotate(235deg);
+}
+.instagram:hover {
+  transform: scale3d(0.7, 0.7, 2);
+}
+.twitter:hover {
+  transform: scale3d(1.6, 1.6, 2);
+}
+
+@media (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+  body {
+    padding: 10px 20px 30px 20px;
+  }
+  header nav {
+    width: 55%;
+  }
+  header .nav-icon {
+    cursor: pointer;
+    display: block;
+    margin-right: 50px;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header nav ul li {
+    display: flex;
+  }
+
+  header nav ul.active {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    width: 30%;
+    position: absolute;
+    top: 90px;
+    left: 21px;
+    z-index: 2;
+    transition: width 20s;
+  }
+
+  header nav ul li {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  header nav ul a {
+    width: 100%;
+  }
+
+  main h1 {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+
+  article {
+    min-width: 300px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer1,
+  .footer2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  * {
+    font-size: 10px;
+  }
+}
